@@ -1,18 +1,20 @@
 {
   "name": "amazoni",
   "version": "1.0.0",
-  "description": "# Lessons",
+  "description": "A MERN (MongoDB, Express.js, React, Node.js) stack application for lessons.",
   "main": "index.js",
   "scripts": {
-    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
-    "start": "node backend/server.js",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "node backend/server.js",
+    "start-frontend": "cd frontend && npm start",
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/basir/mern-amazona.git"
   },
-  "author": "",
+  "author": "Your Name or Organization",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/basir/mern-amazona/issues"
