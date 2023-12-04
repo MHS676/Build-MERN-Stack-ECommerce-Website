@@ -7,16 +7,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.site-container {
+  min-height: 100vh;
+}
 
 main {
-  padding: 1rem;
+  flex: 1;
+}
+.btn-primary {
+  background-color: #f0c040;
+  color: black;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.rating span {
+  color: #ffc000;
 }
 
 .product {
