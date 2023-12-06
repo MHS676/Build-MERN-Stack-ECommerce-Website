@@ -2,7 +2,6 @@
   "name": "backend",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
@@ -23,6 +22,7 @@
     "streamifier": "^0.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+    "nodemon": "^2.0.22"
+  },
+  "description": ""
 }
